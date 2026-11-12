@@ -52,7 +52,7 @@ jobs:
           python3 - <<'PY'
           from pathlib import Path
           files = [Path('android/settings.gradle'), Path('android/build.gradle'), Path('android/app/build.gradle')]
-          mirror = "maven { url 'https://maven.aliyun.com/repository/google' }\\n        maven { url 'https://maven.aliyun.com/repository/public' }\\n        "
+          mirror = "maven { url 'https://maven.aliyun.com/repository/google' }" + chr(10) + "        maven { url 'https://maven.aliyun.com/repository/public' }" + chr(10) + "        "
           for path in files:
               if not path.exists():
                   continue
