@@ -1,6 +1,6 @@
 # Organic Quest — A-Level ZIMSEC Chemistry
 
-A mobile-first, browser-based organic chemistry revision game. It runs directly from GitHub Pages and stores progress locally in the learner's browser.
+A mobile-first, browser-based organic chemistry revision game created by **Efnage Zakazaka**. It runs directly from GitHub Pages and stores progress locally in the learner's browser.
 
 ## Play
 
@@ -9,7 +9,9 @@ After GitHub Pages is enabled, open: https://temmc.github.io/chemistry-checkout/
 ## Features
 
 - Topic practice: hydrocarbons, halogenoalkanes, alcohols and phenols, carbonyl compounds, carboxylic acids and esters, nitrogen compounds, aromatic chemistry, polymers/biomolecules, and organic analysis.
-- Mixed-question challenge and a timed 10-question speed round.
+- Mixed-question challenge, timed 10-question speed round, 30-question exam simulation, and daily challenge.
+- Searchable question library, save-for-later questions, and review of missed or saved questions.
+- Mercedes-AMG-inspired performance car artwork in the app header (original decorative vector icon; not an official Mercedes-Benz logo).
 - Reagent and qualitative-test flashcards.
 - Immediate feedback with explanations.
 - XP, accuracy tracking, and review of missed questions.
@@ -29,7 +31,7 @@ Open `index.html` in a modern browser. No build step is required.
 
 ## Syllabus and accuracy note
 
-This is an independent revision aid, not an official ZIMSEC publication. The question bank is a starter set, not a claim of complete syllabus coverage. Check all examinable scope, reagent conditions, observations, and mechanisms against the current ZIMSEC A-Level Chemistry syllabus, data booklet, and teacher guidance.
+This is an independent revision aid, not an official ZIMSEC publication. The question bank currently contains 96 practice questions and is still a starter set, not a claim of complete syllabus coverage. Check all examinable scope, reagent conditions, observations, and mechanisms against the current ZIMSEC A-Level Chemistry syllabus, data booklet, and teacher guidance.
 
 ## Privacy
 
