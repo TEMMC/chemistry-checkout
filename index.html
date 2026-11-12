@@ -114,7 +114,7 @@ function flipCard(){flipped=!flipped;document.getElementById('flashBack').textCo
 function nextCard(){cardIndex=(cardIndex+1)%cards.length;showCard()}function prevCard(){cardIndex=(cardIndex+cards.length-1)%cards.length;showCard()}
 document.querySelector('[onclick="start(\'flash\')"]').onclick=startFlash;
 renderTopics();renderStats();searchBank('');
-</script><script>
+</script><script src="./questions-extra.js"></script><script>
 (function(){
   const status=document.getElementById('offlineStatus');
   function updateStatus(){
