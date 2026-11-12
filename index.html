@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#101827"><meta name="description" content="A-Level ZIMSEC organic chemistry revision game. Practise reactions, reagents, mechanisms and exam questions.">
+<meta name="theme-color" content="#101827">
+<link rel="manifest" href="./manifest.webmanifest"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="icon" href="./icon.svg" type="image/svg+xml"><meta name="description" content="A-Level ZIMSEC organic chemistry revision game. Practise reactions, reagents, mechanisms and exam questions.">
 <title>Organic Quest • ZIMSEC Chemistry</title>
 <style>
 :root{color-scheme:dark;--bg:#0b1220;--panel:#121e30;--panel2:#19283d;--ink:#edf4ff;--muted:#9eb0c8;--lime:#b8f36b;--cyan:#67d9e8;--line:#2b3b52;--red:#ff8585}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 15% 0%,#1d3550 0,transparent 40%),var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}button{font:inherit;cursor:pointer}.wrap{max-width:920px;margin:auto;padding:18px 16px 90px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:8px 0 24px}.brand{font-weight:850;letter-spacing:-.04em;font-size:1.25rem}.brand span{color:var(--lime)}.pill{border:1px solid var(--line);border-radius:99px;padding:7px 12px;color:var(--muted);font-size:.82rem}.hero{padding:25px 22px;border:1px solid #34465d;border-radius:24px;background:linear-gradient(135deg,#1d3550,#15243a 65%,#203c42);position:relative;overflow:hidden}.eyebrow{color:var(--lime);font-size:.75rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase}.hero h1{font-size:clamp(2rem,8vw,3.5rem);line-height:1.03;letter-spacing:-.06em;margin:12px 0}.hero p{color:#c0cde0;max-width:540px;margin:0}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0 24px}.stat,.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:15px}.stat strong{display:block;font-size:1.45rem;color:var(--lime)}.stat small{color:var(--muted)}.section-head{display:flex;justify-content:space-between;align-items:end;margin:24px 0 12px}.section-head h2{margin:0;font-size:1.15rem}.section-head small{color:var(--muted)}.modes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.mode{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:18px;padding:17px;text-align:left;min-height:125px}.mode:active,.mode:hover{border-color:var(--lime);transform:translateY(-1px)}.mode .emoji{font-size:1.6rem}.mode b{display:block;margin:7px 0 2px}.mode small{color:var(--muted)}.topics{display:flex;flex-wrap:wrap;gap:8px}.topic{border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:9px 12px;border-radius:99px}.topic.active{background:var(--lime);color:#14200b;border-color:var(--lime);font-weight:750}.bar{height:8px;border-radius:9px;background:#26364a;overflow:hidden;margin-top:9px}.bar i{display:block;height:100%;background:var(--lime);width:0}.hide{display:none!important}.quiz-top{display:flex;justify-content:space-between;color:var(--muted);font-size:.86rem;margin:16px 0}.question{font-size:1.25rem;line-height:1.35;margin:10px 0 20px}.answers{display:grid;gap:10px}.answer{width:100%;text-align:left;padding:14px;border-radius:14px;border:1px solid var(--line);background:var(--panel2);color:var(--ink)}.answer:disabled{cursor:default;opacity:1}.answer.correct{border-color:var(--lime);background:#203a2b}.answer.wrong{border-color:var(--red);background:#402a35}.explain{margin-top:14px;padding:15px;border-radius:14px;background:#1a2b3d;color:#c8d6e8}.primary,.secondary{border:0;border-radius:13px;padding:12px 17px;font-weight:800}.primary{background:var(--lime);color:#17220f}.secondary{background:var(--panel2);border:1px solid var(--line);color:var(--ink)}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px}.muted{color:var(--muted)}.flash{min-height:210px;display:grid;place-items:center;text-align:center;padding:25px;cursor:pointer}.flash h2{font-size:1.5rem}.footer{margin-top:30px;color:var(--muted);font-size:.78rem;text-align:center}.back{background:none;border:0;color:var(--cyan);padding:8px 0}.tag{display:inline-block;color:var(--lime);font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em}
@@ -10,6 +11,7 @@
 </style></head>
 <body><main class="wrap">
 <header class="top"><div class="brand">⚗️ ORGANIC <span>QUEST</span><div style="font-size:.68rem;color:var(--muted);font-weight:600;letter-spacing:0">Created by Efnage Zakazaka</div></div><div class="pill" style="display:flex;align-items:center;gap:7px"><svg width="43" height="25" viewBox="0 0 90 48" aria-label="Luxury performance sedan icon"><path d="M8 31h6l7-13q3-5 10-5h28q8 0 13 7l8 11h4q4 0 4 4v5H5v-5q0-4 3-4Z" fill="none" stroke="currentColor" stroke-width="3"/><path d="m25 18-5 11h47l-8-11q-3-3-8-3H34q-6 0-9 3Z" fill="#67d9e8" opacity=".25" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="39" r="7" fill="#0b1220" stroke="currentColor" stroke-width="3"/><circle cx="68" cy="39" r="7" fill="#0b1220" stroke="currentColor" stroke-width="3"/><path d="M45 2l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#b8f36b"/></svg><span>AMG inspired</span></div></header>
+<div id="offlineStatus" class="pill" role="status" aria-live="polite" style="display:inline-flex;margin:-10px 0 14px">Checking offline readiness…</div>
 <section id="home">
 <div class="hero"><div class="eyebrow">Your reaction to exam success</div><h1>Organic chemistry.<br>Level up.</h1><p>Train your reaction knowledge, test your understanding and turn tricky organic chemistry into marks.</p></div>
 <div class="stats"><div class="stat"><strong id="points">0</strong><small>XP earned</small></div><div class="stat"><strong id="done">0</strong><small>Questions tried</small></div><div class="stat"><strong id="streak">0</strong><small>Day streak</small></div></div>
@@ -112,4 +114,26 @@ function flipCard(){flipped=!flipped;document.getElementById('flashBack').textCo
 function nextCard(){cardIndex=(cardIndex+1)%cards.length;showCard()}function prevCard(){cardIndex=(cardIndex+cards.length-1)%cards.length;showCard()}
 document.querySelector('[onclick="start(\'flash\')"]').onclick=startFlash;
 renderTopics();renderStats();searchBank('');
-</script></body></html>
+</script><script>
+(function(){
+  const status=document.getElementById('offlineStatus');
+  function updateStatus(){
+    if(!status)return;
+    status.textContent=navigator.onLine?'● Online · offline copy ready after caching':'● Offline mode · using saved app';
+    status.style.color=navigator.onLine?'var(--lime)':'var(--cyan)';
+  }
+  window.addEventListener('online',updateStatus);
+  window.addEventListener('offline',updateStatus);
+  updateStatus();
+  if('serviceWorker' in navigator){
+    window.addEventListener('load',()=>{
+      navigator.serviceWorker.register('./sw.js')
+        .then(()=>{ if(status) status.textContent=navigator.onLine?'● Online · offline support enabled':'● Offline mode · using saved app'; })
+        .catch(error=>{ if(status) status.textContent='Offline caching unavailable in this browser'; console.error('Service worker:',error); });
+    });
+  } else if(status) {
+    status.textContent='Offline install is not supported by this browser';
+  }
+})();
+</script>
+</body></html>
