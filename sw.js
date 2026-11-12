@@ -1,9 +1,10 @@
-const CACHE_NAME = "organic-quest-v1";
+const CACHE_NAME = "organic-quest-v2";
 const APP_SHELL = [
   "./",
   "./index.html",
   "./manifest.webmanifest",
-  "./icon.svg"
+  "./icon.svg",
+  "./questions-extra.js"
 ];
 
 self.addEventListener("install", event => {
