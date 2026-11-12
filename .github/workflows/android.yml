@@ -46,6 +46,22 @@ jobs:
       - name: Generate Android project
         run: npx cap add android
 
+      - name: Configure reliable Maven mirrors
+        run: |
+          set -e
+          python3 - <<'PY'
+          from pathlib import Path
+          files = [Path('android/settings.gradle'), Path('android/build.gradle'), Path('android/app/build.gradle')]
+          mirror = "maven { url 'https://maven.aliyun.com/repository/google' }\\n        maven { url 'https://maven.aliyun.com/repository/public' }\\n        "
+          for path in files:
+              if not path.exists():
+                  continue
+              text = path.read_text()
+              text = text.replace('google()', mirror + 'google()')
+              path.write_text(text)
+              print(f'Configured Maven mirrors in {path}')
+          PY
+
       - name: Generate chemistry launcher icon
         run: |
           set -e
