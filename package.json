@@ -4,7 +4,7 @@
   "private": true,
   "description": "Offline A-Level ZIMSEC organic chemistry revision app",
   "scripts": {
-    "build:web": "mkdir -p www && cp index.html sw.js manifest.webmanifest icon.svg www/"
+    "build:web": "mkdir -p www && cp index.html sw.js manifest.webmanifest icon.svg questions-extra.js www/"
   },
   "dependencies": {
     "@capacitor/android": "^7.4.3",
