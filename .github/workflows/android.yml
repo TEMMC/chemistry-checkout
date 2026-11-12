@@ -46,6 +46,14 @@ jobs:
       - name: Generate Android project
         run: npx cap add android
 
+      - name: Generate chemistry launcher icon
+        run: |
+          set -e
+          npm install --no-save --no-audit --no-fund @capacitor/assets sharp
+          mkdir -p assets
+          node -e "require('sharp')('icon.svg').resize(1024,1024).png().toFile('assets/icon-only.png')"
+          npx capacitor-assets generate --android
+
       - name: Sync bundled app into Android project
         run: npx cap sync android
 
