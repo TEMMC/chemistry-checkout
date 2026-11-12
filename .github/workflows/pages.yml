@@ -27,6 +27,7 @@ jobs:
           test -s sw.js
           test -s manifest.webmanifest
           test -s icon.svg
+          test -s questions-extra.js
           grep -qi '<!doctype html>' index.html
           grep -q 'const bank=' index.html
           grep -q 'navigator.serviceWorker.register' index.html
@@ -37,7 +38,7 @@ jobs:
         run: |
           set -e
           mkdir -p dist
-          cp index.html sw.js manifest.webmanifest icon.svg dist/
+          cp index.html sw.js manifest.webmanifest icon.svg questions-extra.js dist/
           if [ -f README.md ]; then cp README.md dist/; fi
           cd dist
           zip -r ../chemistry-checkout-offline.zip .
